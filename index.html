@@ -1,0 +1,16 @@
+<html>
+<head>
+</head>
+<body>
+ <img src="pic_trulli.jpg" alt="Youtube ID Image">
+ <input value="" id="youtube-id"> </input>
+ <input type="button" id="youtube-id-click"></input>
+ <iframe id="iframe" src=""></iframe>
+ <script>
+ document.getElementById("youtube-id-click").addEventListener("click", function(){
+ var youtubeurl = "https://www.youtube-nocookie.com/embed/"+document.getElementById("youtube-id").value+"?rel=0&amp;showinfo=0";
+ document.getElementById("iframe").src = youtubeurl;
+ }); 
+ </script>
+</body>
+</html>
