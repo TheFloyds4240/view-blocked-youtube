@@ -1,11 +1,14 @@
 <html>
 <head>
+<title> Youtube unblocker </title>
 </head>
 <body>
- <img src="pic_trulli.jpg" alt="Youtube ID Image">
+ <img src="youtube.png" alt="Youtube ID Image">
+ </br>
  <input value="" id="youtube-id"> </input>
- <input type="button" id="youtube-id-click"></input>
- <iframe id="iframe" src=""></iframe>
+ <input type="button" value="open" id="youtube-id-click"></input>
+ </br>
+ <iframe width="100%" height="90%" id="iframe" src=""></iframe>
  <script>
  document.getElementById("youtube-id-click").addEventListener("click", function(){
  var youtubeurl = "https://www.youtube-nocookie.com/embed/"+document.getElementById("youtube-id").value+"?rel=0&amp;showinfo=0";
