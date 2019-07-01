@@ -1,19 +1,16 @@
 <html>
+
 <head>
-<title> Youtube unblocker </title>
+    <title> Youtube unblocker </title>
+    <link rel="stylesheet" href="css.css">
 </head>
+
 <body>
- <img src="youtube.png" alt="Youtube ID Image">
- </br>
- <input value="" id="youtube-id"> </input>
- <input type="button" value="open" id="youtube-id-click"></input>
- </br>
- <iframe width="100%" height="90%" id="iframe" src=""></iframe>
- <script>
- document.getElementById("youtube-id-click").addEventListener("click", function(){
- var youtubeurl = "https://www.youtube-nocookie.com/embed/"+document.getElementById("youtube-id").value+"?rel=0&amp;showinfo=0";
- document.getElementById("iframe").src = youtubeurl;
- }); 
- </script>
+    <div class="urlDiv">
+        <p>https://www.youtube.com/watch?v=<input class="red-border" placeholder="4Y1lZQsyuSQ" id="youtube-id" type="text"></input></p>
+    </div>
+    <iframe width="100%" height="90%" id="iframe" src=""></iframe>
+    <script src="./js.js"></script>
 </body>
+
 </html>
