@@ -1,7 +1,7 @@
 youtubeid=document.getElementById("youtube-id")
 youtubeid.addEventListener("keypress", function (event) {
     if(event.keyCode = 13){
-        var youtubeurl = "https://www.youtube-nocookie.com/embed/" + document.getElementById("youtube-id").value + "?rel=0&amp;showinfo=0";
+        var youtubeurl = "https://www.youtube-nocookie.com/embed/" + document.getElementById("youtube-id").value + "?rel=0&color=white&amp;showinfo=0";
         document.getElementById("iframe").src = youtubeurl;
     }
 });
