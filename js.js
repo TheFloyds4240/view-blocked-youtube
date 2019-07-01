@@ -9,10 +9,12 @@ youtubeid.addEventListener("paste", function (event) {
     setTimeout(function(){
         console.log("A");
         console.log(youtubeid.value)
-        if(youtubeid.value.startsWith("https://www.youtube.com/watch?v=")){
-            console.log("B");
-            youtubeid.value= youtubeid.value.replace("https://www.youtube.com/watch?v=","")
-        }
+        youtubeid.value = youtube_parser(youtubeid.value);
     },10)
     
 });
+function youtube_parser(url){
+    var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
+    var match = url.match(regExp);
+    return (match&&match[7].length==11)? match[7] : false;
+}
