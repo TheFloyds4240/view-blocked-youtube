@@ -1,0 +1,29 @@
+.red-border{
+    border: 2px solid rgb(136, 207, 28);
+    box-shadow: 1px 1px 6px rgb(136, 207, 28);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 8px;
+}
+
+.urlDiv{
+    text-align: center;
+    background-color: rgb(207, 207, 207);
+    width: 40%;
+    border-radius: 10px;
+    transition: width, box-shadow 0.3s ease-in-out;
+    transition:  0.3s;
+}
+
+.urlDiv:hover{
+    cursor: pointer;
+    width: 41%;
+    box-shadow: 2px 2px 4px rgb(146, 146, 146);
+}
+
+p{
+    color: white;
+    font-size: 18px;
+    font-weight: 650;
+    
+}
