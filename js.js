@@ -9,7 +9,11 @@ youtubeid.addEventListener("paste", function (event) {
     setTimeout(function(){
         console.log("A");
         console.log(youtubeid.value)
+        if(youtubeid.value.length = 11){
+        return;
+        }else{
         youtubeid.value = youtube_parser(youtubeid.value);
+        }
     },10)
     
 });
