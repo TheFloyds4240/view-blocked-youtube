@@ -10,7 +10,7 @@ youtubeid.addEventListener("paste", function (event) {
         console.log("A");
         console.log(youtubeid.value);
         console.log(youtubeid.value.length);
-        if(!(youtube_parser(youtubeid.value) = false)){
+        if(!(youtube_parser(youtubeid.value) = "false")){
             youtubeid.value = youtube_parser(youtubeid.value)
         }
     },10)
@@ -19,5 +19,5 @@ youtubeid.addEventListener("paste", function (event) {
 function youtube_parser(url){
     var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
     var match = url.match(regExp);
-    return (match&&match[7].length==11)? match[7] : false;
+    return (match&&match[7].length==11)? match[7] : "false";
 }
