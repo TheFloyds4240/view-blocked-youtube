@@ -10,10 +10,8 @@ youtubeid.addEventListener("paste", function (event) {
         console.log("A");
         console.log(youtubeid.value);
         console.log(youtubeid.value.length);
-        if(youtube_parser(youtubeid.value) = false){
-        return;
-        }else{
-        youtubeid.value = youtube_parser(youtubeid.value);
+        if(!(youtube_parser(youtubeid.value) = false)){
+            youtubeid.value = youtube_parser(youtubeid.value)
         }
     },10)
     
