@@ -8,7 +8,8 @@ youtubeid.addEventListener("keypress", function (event) {
 youtubeid.addEventListener("paste", function (event) {
     setTimeout(function(){
         console.log("A");
-        console.log(youtubeid.value)
+        console.log(youtubeid.value);
+        console.log(youtubeid.value.length);
         if(youtubeid.value.length = 11){
         return;
         }else{
